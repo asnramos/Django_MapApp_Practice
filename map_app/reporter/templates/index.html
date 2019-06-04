@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    {% load leaflet_tags %}
+<head>
+    {% leaflet_js %}
+    {% leaflet_css %}
+    <title>Home Page</title>
+    <style type="text/css">
+        #gis {width: 80%; height:700px}
+    </style>
+</head>
+<body>
+<h3>Here we are!</h3>
+<br>
+    {% leaflet_map "gis" %}
+</body>
+</html>
